@@ -2,6 +2,11 @@ import * as THREE from 'three'
 import Project from './Project'
 import TweenLite from 'gsap/TweenLite'
 
+import projectsSmartPortfolioAdvisorASources from '../../../models/projects/SmartPortfolioAdvisor/slideA.jpg'
+import projectsSmartPortfolioAdvisorBSources from '../../../models/projects/SmartPortfolioAdvisor/slideB.jpg'
+import projectsSmartPortfolioAdvisorCSources from '../../../models/projects/SmartPortfolioAdvisor/slideC.jpg'
+import projectsSmartPortfolioAdvisorDSources from '../../../models/projects/SmartPortfolioAdvisor/slideD.jpg'
+
 import projectsThreejsJourneySlideASources from '../../../models/projects/threejsJourney/slideA.jpg'
 import projectsThreejsJourneySlideBSources from '../../../models/projects/threejsJourney/slideB.jpg'
 import projectsThreejsJourneySlideCSources from '../../../models/projects/threejsJourney/slideC.jpg'
@@ -112,6 +117,31 @@ export default class ProjectsSection
     setList()
     {
         this.list = [
+            {
+                name: 'Smart portfolio Advisor',
+                imageSources:
+                [
+                    projectsSmartPortfolioAdvisorASources,
+                    projectsSmartPortfolioAdvisorBSources,
+                    projectsSmartPortfolioAdvisorCSources,
+                    projectsSmartPortfolioAdvisorDSources
+                ],
+                floorTexture: this.resources.items.projectsSmartPortfolioAdvisorFloorTexture,
+                link:
+                {
+                    href: 'https://github.com/princepride/dashboard',
+                    x: - 4.8,
+                    y: - 4,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions:
+                [
+                ]
+            },
             {
                 name: 'Three.js Journey',
                 imageSources:

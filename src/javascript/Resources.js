@@ -107,6 +107,9 @@ import projectsOranoFloorSource from '../models/projects/orano/floorTexture.png'
 // import projectsGleecChatFloorSource from '../models/projects/gleecChat/floorTexture.png'
 import projectsKepplerFloorSource from '../models/projects/keppler/floorTexture.png'
 
+//My own floor texture
+import projectsSmartPortfolioAdvisorSource from '../models/projects/SmartPortfolioAdvisor/floorTexture.png'
+
 // Information
 import informationStaticBaseSource from '../models/information/static/base.glb'
 import informationStaticCollisionSource from '../models/information/static/collision.glb'
@@ -221,6 +224,8 @@ export default class Resources extends EventEmitter
         this.items = {}
 
         this.loader.load([
+            //My own project
+            { name: 'projectsSmartPortfolioAdvisorFloor', source: projectsSmartPortfolioAdvisorSource, type: 'texture' },
             // Matcaps
             { name: 'matcapBeige', source: matcapBeigeSource, type: 'texture' },
             { name: 'matcapBlack', source: matcapBlackSource, type: 'texture' },

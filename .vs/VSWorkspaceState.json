@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\javascript"
   ],
+  "SelectedNode": "\\src\\javascript\\Resources.js",
   "PreviewInSolutionExplorer": false
 }
