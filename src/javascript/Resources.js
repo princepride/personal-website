@@ -115,7 +115,7 @@ import informationStaticBaseSource from '../models/information/static/base.glb'
 import informationStaticCollisionSource from '../models/information/static/collision.glb'
 import informationStaticFloorShadowSource from '../models/information/static/floorShadow.png'
 
-import informationBaguetteBaseSource from '../models/information/baguette/base.glb'
+//import informationBaguetteBaseSource from '../models/information/baguette/base.glb'
 import informationBaguetteCollisionSource from '../models/information/baguette/collision.glb'
 
 import informationContactTwitterLabelSource from '../models/information/static/contactTwitterLabel.png'
@@ -335,7 +335,7 @@ export default class Resources extends EventEmitter
             { name: 'informationStaticCollision', source: informationStaticCollisionSource },
             { name: 'informationStaticFloorShadow', source: informationStaticFloorShadowSource, type: 'texture' },
 
-            { name: 'informationBaguetteBase', source: informationBaguetteBaseSource },
+            //{ name: 'informationBaguetteBase', source: informationBaguetteBaseSource },
             { name: 'informationBaguetteCollision', source: informationBaguetteCollisionSource },
 
             { name: 'informationContactTwitterLabel', source: informationContactTwitterLabelSource, type: 'texture' },
