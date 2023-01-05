@@ -100,7 +100,7 @@ html
     transition: transform 0.15s ease-in;
 }
 
-.threejs-journey .boy .variant.is-yay
+/*.threejs-journey .boy .variant.is-yay
 {
     background: url('../images/boyYay.png');
 }
@@ -108,7 +108,7 @@ html
 .threejs-journey .boy .variant.is-shrugging
 {
     background: url('../images/boyShrugging.png');
-}
+}*/
 
 .threejs-journey.is-hover-yes .boy .variant.is-yay
 {
@@ -131,7 +131,7 @@ html
     transition-timing-function: ease-out;
 }
 
-.threejs-journey .boy .is-hi .body
+/*.threejs-journey .boy .is-hi .body
 {
     position: absolute;
     top: 0;
@@ -139,9 +139,9 @@ html
     width: 100%;
     height: 100%;
     background: url('../images/boyHiBody.png');
-}
+}*/
 
-.threejs-journey .boy .is-hi .arm
+/*.threejs-journey .boy .is-hi .arm
 {
     position: absolute;
     bottom: 0;
@@ -151,7 +151,7 @@ html
     background: url('../images/boyHiArm.png');
     animation: boyArmWave 3s infinite ease-in-out;
     transform-origin: 30% 90%;
-}
+}*/
 
 @keyframes boyArmWave
 {

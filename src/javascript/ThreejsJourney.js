@@ -10,11 +10,11 @@ export default class ThreejsJourney
         this.world = _options.world
         // Setup
         this.$container = document.querySelector('.js-threejs-journey')
-        this.$messages = [...this.$container.querySelectorAll('.js-message')]
-        this.$yes = this.$container.querySelector('.js-yes')
-        this.$no = this.$container.querySelector('.js-no')
+        //this.$messages = [...this.$container.querySelectorAll('.js-message')]
+        //this.$yes = this.$container.querySelector('.js-yes')
+        //this.$no = this.$container.querySelector('.js-no')
         this.step = 0
-        this.maxStep = this.$messages.length - 1
+        //this.maxStep = this.$messages.length - 1
         this.seenCount = window.localStorage.getItem('threejsJourneySeenCount') || 0
         this.seenCount = parseInt(this.seenCount)
         this.shown = false
@@ -28,7 +28,7 @@ export default class ThreejsJourney
         if(this.prevent)
             return
 
-        this.setYesNo()
+        //this.setYesNo()
         //this.setLog()
 
         this.time.on('tick', () =>
@@ -45,57 +45,57 @@ export default class ThreejsJourney
         })
     }
 
-    setYesNo()
-    {
-        // Clicks
-        this.$yes.addEventListener('click', () =>
-        {
-            TweenLite.delayedCall(2, () =>
-            {
-                this.hide()
-            })
-            window.localStorage.setItem('threejsJourneyPrevent', 1)
-        })
+    //setYesNo()
+    //{
+    //    // Clicks
+    //    this.$yes.addEventListener('click', () =>
+    //    {
+    //        TweenLite.delayedCall(2, () =>
+    //        {
+    //            this.hide()
+    //        })
+    //        window.localStorage.setItem('threejsJourneyPrevent', 1)
+    //    })
 
-        this.$no.addEventListener('click', () =>
-        {
-            this.next()
+    //    this.$no.addEventListener('click', () =>
+    //    {
+    //        this.next()
 
-            TweenLite.delayedCall(5, () =>
-            {
-                this.hide()
-            })
-        })
+    //        TweenLite.delayedCall(5, () =>
+    //        {
+    //            this.hide()
+    //        })
+    //    })
 
-        // Hovers
-        this.$yes.addEventListener('mouseenter', () =>
-        {
-            this.$container.classList.remove('is-hover-none')
-            this.$container.classList.remove('is-hover-no')
-            this.$container.classList.add('is-hover-yes')
-        })
+    //    // Hovers
+    //    this.$yes.addEventListener('mouseenter', () =>
+    //    {
+    //        this.$container.classList.remove('is-hover-none')
+    //        this.$container.classList.remove('is-hover-no')
+    //        this.$container.classList.add('is-hover-yes')
+    //    })
 
-        this.$no.addEventListener('mouseenter', () =>
-        {
-            this.$container.classList.remove('is-hover-none')
-            this.$container.classList.add('is-hover-no')
-            this.$container.classList.remove('is-hover-yes')
-        })
+    //    this.$no.addEventListener('mouseenter', () =>
+    //    {
+    //        this.$container.classList.remove('is-hover-none')
+    //        this.$container.classList.add('is-hover-no')
+    //        this.$container.classList.remove('is-hover-yes')
+    //    })
 
-        this.$yes.addEventListener('mouseleave', () =>
-        {
-            this.$container.classList.add('is-hover-none')
-            this.$container.classList.remove('is-hover-no')
-            this.$container.classList.remove('is-hover-yes')
-        })
+    //    this.$yes.addEventListener('mouseleave', () =>
+    //    {
+    //        this.$container.classList.add('is-hover-none')
+    //        this.$container.classList.remove('is-hover-no')
+    //        this.$container.classList.remove('is-hover-yes')
+    //    })
 
-        this.$no.addEventListener('mouseleave', () =>
-        {
-            this.$container.classList.add('is-hover-none')
-            this.$container.classList.remove('is-hover-no')
-            this.$container.classList.remove('is-hover-yes')
-        })
-    }
+    //    this.$no.addEventListener('mouseleave', () =>
+    //    {
+    //        this.$container.classList.add('is-hover-none')
+    //        this.$container.classList.remove('is-hover-no')
+    //        this.$container.classList.remove('is-hover-yes')
+    //    })
+    //}
 
 //    setLog()
 //    {
@@ -132,18 +132,18 @@ export default class ThreejsJourney
 //        console.log('%c— Bruno', 'color: #777777');
 //    }
 
-    hide()
-    {
-        for(const _$message of this.$messages)
-        {
-            _$message.classList.remove('is-visible')
-        }
+    //hide()
+    //{
+    //    for(const _$message of this.$messages)
+    //    {
+    //        _$message.classList.remove('is-visible')
+    //    }
 
-        TweenLite.delayedCall(0.5, () =>
-        {
-            this.$container.classList.remove('is-active')
-        })
-    }
+    //    TweenLite.delayedCall(0.5, () =>
+    //    {
+    //        this.$container.classList.remove('is-active')
+    //    })
+    //}
 
     start()
     {
@@ -168,51 +168,51 @@ export default class ThreejsJourney
         window.localStorage.setItem('threejsJourneySeenCount', this.seenCount + 1)
     }
 
-    updateMessages()
-    {
-        let i = 0
+    //updateMessages()
+    //{
+    //    let i = 0
 
-        // Visibility
-        for(const _$message of this.$messages)
-        {
-            if(i < this.step)
-                _$message.classList.add('is-visible')
+    //    // Visibility
+    //    for(const _$message of this.$messages)
+    //    {
+    //        if(i < this.step)
+    //            _$message.classList.add('is-visible')
 
-            i++
-        }
+    //        i++
+    //    }
 
-        // Position
-        this.$messages.reverse()
+    //    // Position
+    //    this.$messages.reverse()
 
-        let height = 0
-        i = this.maxStep
-        for(const _$message of this.$messages)
-        {
-            const messageHeight = _$message.offsetHeight
-            if(i < this.step)
-            {
-                _$message.style.transform = `translateY(${- height}px)`
-                height += messageHeight + 20
-            }
-            else
-            {
-                _$message.style.transform = `translateY(${messageHeight}px)`
-            }
+        //let height = 0
+        //i = this.maxStep
+        //for(const _$message of this.$messages)
+        //{
+        //    const messageHeight = _$message.offsetHeight
+        //    if(i < this.step)
+        //    {
+        //        _$message.style.transform = `translateY(${- height}px)`
+        //        height += messageHeight + 20
+        //    }
+        //    else
+        //    {
+        //        _$message.style.transform = `translateY(${messageHeight}px)`
+        //    }
 
-            i--
-        }
+        //    i--
+        //}
 
 
-        this.$messages.reverse()
-    }
+    //    this.$messages.reverse()
+    //}
 
-    next()
-    {
-        if(this.step > this.maxStep)
-            return
+    //next()
+    //{
+    //    if(this.step > this.maxStep)
+    //        return
 
-        this.step++
+    //    this.step++
 
-        this.updateMessages()
-    }
+    //    this.updateMessages()
+    //}
 }
