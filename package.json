@@ -9,15 +9,10 @@
     "watch": "webpack --watch --config ./bundler/webpack.config.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brunosimon/three.js-template.git"
+    "type": "git"
   },
-  "author": "brunosimon",
+  "author": "princepride",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/brunosimon/three.js-template/issues"
-  },
-  "homepage": "https://github.com/brunosimon/three.js-template#readme",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
