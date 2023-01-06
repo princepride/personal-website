@@ -147,7 +147,7 @@ export default class ThreejsJourney
 
     start()
     {
-        this.$container.classList.add('is-active')
+        //this.$container.classList.add('is-active')
 
         window.requestAnimationFrame(() =>
         {

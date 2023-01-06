@@ -89,10 +89,12 @@ export default class
         // Go method
         this.reveal.go = () =>
         {
-            TweenLite.fromTo(this.reveal, 3, { matcapsProgress: 0 }, { matcapsProgress: 1 })
-            TweenLite.fromTo(this.reveal, 3, { floorShadowsProgress: 0 }, { floorShadowsProgress: 1, delay: 0.5 })
+            //TweenLite.fromTo(this.reveal, 3, { matcapsProgress: 0 }, { matcapsProgress: 1 })
+            //TweenLite.fromTo(this.reveal, 3, { floorShadowsProgress: 0 }, { floorShadowsProgress: 1, delay: 0.5 })
             TweenLite.fromTo(this.shadows, 3, { alpha: 0 }, { alpha: 0.5, delay: 0.5 })
-
+            this.reveal.matcapsProgress = 1
+            this.reveal.floorShadowsProgress = 1
+            //this.shadows.alpha = 0.5
             if(this.sections.intro)
             {
                 TweenLite.fromTo(this.sections.intro.instructions.arrows.label.material, 0.3, { opacity: 0 }, { opacity: 1, delay: 0.5 })
@@ -104,8 +106,8 @@ export default class
 
             // Car
             this.physics.car.chassis.body.sleep()
-            this.physics.car.chassis.body.position.set(0, -60, 12)
-            //this.physics.car.chassis.body.rotation += Math.PI / 2
+            //this.physics.car.chassis.body.position.set(0, 0, 12)
+            this.physics.car.chassis.body.position.set(0, -60, 8)
 
             window.setTimeout(() =>
             {
@@ -208,7 +210,6 @@ export default class
         this.startingScreen.startLabel.material = new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, color: 0xffffff, alphaMap: this.startingScreen.startLabel.texture })
         this.startingScreen.startLabel.material.opacity = 0
         this.startingScreen.startLabel.mesh = new THREE.Mesh(this.startingScreen.startLabel.geometry, this.startingScreen.startLabel.material)
-        this.startingScreen.startLabel.mesh.matrixAutoUpdate = false
         this.container.add(this.startingScreen.startLabel.mesh)
 
         // Progress
@@ -240,10 +241,11 @@ export default class
             TweenLite.to(this.startingScreen.startLabel.material, 0.3, { opacity: 0, delay: 0.4 })
             this.start()
 
-            window.setTimeout(() =>
-            {
-                this.reveal.go()
-            }, 600)
+            this.reveal.go()
+            //window.setTimeout(() =>
+            //{
+            //    this.reveal.go()
+            //}, 600)
         })
     }
 
