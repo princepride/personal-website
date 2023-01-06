@@ -104,7 +104,7 @@ export default class
 
             // Car
             this.physics.car.chassis.body.sleep()
-            this.physics.car.chassis.body.position.set(0, 0, 12)
+            this.physics.car.chassis.body.position.set(0, -60, 12)
 
             window.setTimeout(() =>
             {
