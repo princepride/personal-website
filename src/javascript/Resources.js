@@ -116,7 +116,7 @@ import informationStaticCollisionSource from '../models/information/static/colli
 import informationStaticFloorShadowSource from '../models/information/static/floorShadow.png'
 
 //import informationBaguetteBaseSource from '../models/information/baguette/base.glb'
-import informationBaguetteCollisionSource from '../models/information/baguette/collision.glb'
+//import informationBaguetteCollisionSource from '../models/information/baguette/collision.glb'
 
 import informationContactTwitterLabelSource from '../models/information/static/contactTwitterLabel.png'
 import informationContactGithubLabelSource from '../models/information/static/contactGithubLabel.png'
@@ -227,6 +227,7 @@ export default class Resources extends EventEmitter
             //My own project
             { name: 'projectsSmartPortfolioAdvisorFloor', source: projectsSmartPortfolioAdvisorSource, type: 'texture' },
             { name: 'projectsPathfindingVisualizerFloor', source: projectsPathfindingVisualizerSource, type: 'texture' },
+
             // Matcaps
             { name: 'matcapBeige', source: matcapBeigeSource, type: 'texture' },
             { name: 'matcapBlack', source: matcapBlackSource, type: 'texture' },
@@ -337,7 +338,7 @@ export default class Resources extends EventEmitter
             { name: 'informationStaticFloorShadow', source: informationStaticFloorShadowSource, type: 'texture' },
 
             //{ name: 'informationBaguetteBase', source: informationBaguetteBaseSource },
-            { name: 'informationBaguetteCollision', source: informationBaguetteCollisionSource },
+            // { name: 'informationBaguetteCollision', source: informationBaguetteCollisionSource },
 
             { name: 'informationContactTwitterLabel', source: informationContactTwitterLabelSource, type: 'texture' },
             { name: 'informationContactGithubLabel', source: informationContactGithubLabelSource, type: 'texture' },
