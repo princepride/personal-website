@@ -7,6 +7,10 @@ import projectsSmartPortfolioAdvisorBSources from '../../../models/projects/Smar
 import projectsSmartPortfolioAdvisorCSources from '../../../models/projects/SmartPortfolioAdvisor/slideC.jpg'
 import projectsSmartPortfolioAdvisorDSources from '../../../models/projects/SmartPortfolioAdvisor/slideD.jpg'
 
+import projectsPathfindingVisualizerASources from '../../../models/projects/PathfindingVisualizer/SlideA.png'
+import projectsPathfindingVisualizerBSources from '../../../models/projects/PathfindingVisualizer/SlideB.png'
+import projectsPathfindingVisualizerCSources from '../../../models/projects/PathfindingVisualizer/SlideC.png'
+
 import projectsThreejsJourneySlideASources from '../../../models/projects/threejsJourney/slideA.jpg'
 import projectsThreejsJourneySlideBSources from '../../../models/projects/threejsJourney/slideB.jpg'
 import projectsThreejsJourneySlideCSources from '../../../models/projects/threejsJourney/slideC.jpg'
@@ -118,7 +122,31 @@ export default class ProjectsSection
     {
         this.list = [
             {
-                name: 'Smart portfolio Advisor',
+                name: 'Smart Portfolio Advisor',
+                imageSources:
+                [
+                    projectsPathfindingVisualizerASources,
+                    projectsPathfindingVisualizerBSources,
+                    projectsPathfindingVisualizerCSources
+                ],
+                floorTexture: this.resources.items.projectsPathfindingVisualizerFloorTexture,
+                link:
+                {
+                    href: 'https://github.com/princepride/react-pathfinding',
+                    x: - 4.8,
+                    y: - 4,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions:
+                [
+                ]
+            },
+            {
+                name: 'Path Finding Visualizer',
                 imageSources:
                 [
                     projectsSmartPortfolioAdvisorASources,

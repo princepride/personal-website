@@ -109,7 +109,7 @@ import projectsKepplerFloorSource from '../models/projects/keppler/floorTexture.
 
 //My own floor texture
 import projectsSmartPortfolioAdvisorSource from '../models/projects/SmartPortfolioAdvisor/floorTexture.png'
-
+import projectsPathfindingVisualizerSource from '../models/projects/PathfindingVisualizer/floorTexture.png'
 // Information
 import informationStaticBaseSource from '../models/information/static/base.glb'
 import informationStaticCollisionSource from '../models/information/static/collision.glb'
@@ -226,6 +226,7 @@ export default class Resources extends EventEmitter
         this.loader.load([
             //My own project
             { name: 'projectsSmartPortfolioAdvisorFloor', source: projectsSmartPortfolioAdvisorSource, type: 'texture' },
+            { name: 'projectsPathfindingVisualizerFloor', source: projectsPathfindingVisualizerSource, type: 'texture' },
             // Matcaps
             { name: 'matcapBeige', source: matcapBeigeSource, type: 'texture' },
             { name: 'matcapBlack', source: matcapBlackSource, type: 'texture' },
