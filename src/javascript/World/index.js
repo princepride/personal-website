@@ -237,9 +237,7 @@ export default class
         {
             this.startingScreen.area.deactivate()
             TweenLite.to(this.startingScreen.area.floorBorder.material.uniforms.uProgress, 0.3, { value: 0, delay: 0.4 })
-
             TweenLite.to(this.startingScreen.startLabel.material, 0.3, { opacity: 0, delay: 0.4 })
-
             this.start()
 
             window.setTimeout(() =>

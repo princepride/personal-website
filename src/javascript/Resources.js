@@ -32,35 +32,35 @@ import introInstructionsOtherSource from '../models/intro/instructions/other.png
 import introArrowKeyBaseSource from '../models/intro/arrowKey/base.glb'
 import introArrowKeyCollisionSource from '../models/intro/arrowKey/collision.glb'
 
-import introBBaseSource from '../models/intro/b/base.glb'
-import introBCollisionSource from '../models/intro/b/collision.glb'
+//import introBBaseSource from '../models/intro/b/base.glb'
+//import introBCollisionSource from '../models/intro/b/collision.glb'
 
-import introRBaseSource from '../models/intro/r/base.glb'
-import introRCollisionSource from '../models/intro/r/collision.glb'
+//import introRBaseSource from '../models/intro/r/base.glb'
+//import introRCollisionSource from '../models/intro/r/collision.glb'
 
-import introUBaseSource from '../models/intro/u/base.glb'
-import introUCollisionSource from '../models/intro/u/collision.glb'
+//import introUBaseSource from '../models/intro/u/base.glb'
+//import introUCollisionSource from '../models/intro/u/collision.glb'
 
-import introNBaseSource from '../models/intro/n/base.glb'
-import introNCollisionSource from '../models/intro/n/collision.glb'
+//import introNBaseSource from '../models/intro/n/base.glb'
+//import introNCollisionSource from '../models/intro/n/collision.glb'
 
-import introOBaseSource from '../models/intro/o/base.glb'
-import introOCollisionSource from '../models/intro/o/collision.glb'
+//import introOBaseSource from '../models/intro/o/base.glb'
+//import introOCollisionSource from '../models/intro/o/collision.glb'
 
-import introSBaseSource from '../models/intro/s/base.glb'
-import introSCollisionSource from '../models/intro/s/collision.glb'
+//import introSBaseSource from '../models/intro/s/base.glb'
+//import introSCollisionSource from '../models/intro/s/collision.glb'
 
-import introIBaseSource from '../models/intro/i/base.glb'
-import introICollisionSource from '../models/intro/i/collision.glb'
+//import introIBaseSource from '../models/intro/i/base.glb'
+//import introICollisionSource from '../models/intro/i/collision.glb'
 
-import introMBaseSource from '../models/intro/m/base.glb'
-import introMCollisionSource from '../models/intro/m/collision.glb'
+//import introMBaseSource from '../models/intro/m/base.glb'
+//import introMCollisionSource from '../models/intro/m/collision.glb'
 
-import introCreativeBaseSource from '../models/intro/creative/base.glb'
-import introCreativeCollisionSource from '../models/intro/creative/collision.glb'
+//import introCreativeBaseSource from '../models/intro/creative/base.glb'
+//import introCreativeCollisionSource from '../models/intro/creative/collision.glb'
 
-import introDevBaseSource from '../models/intro/dev/base.glb'
-import introDevCollisionSource from '../models/intro/dev/collision.glb'
+//import introDevBaseSource from '../models/intro/dev/base.glb'
+//import introDevCollisionSource from '../models/intro/dev/collision.glb'
 
 // Crossroads
 import crossroadsStaticFloorShadowSource from '../models/crossroads/static/floorShadow.png'
@@ -257,35 +257,35 @@ export default class Resources extends EventEmitter
             { name: 'introArrowKeyBase', source: introArrowKeyBaseSource },
             { name: 'introArrowKeyCollision', source: introArrowKeyCollisionSource },
 
-            { name: 'introBBase', source: introBBaseSource },
-            { name: 'introBCollision', source: introBCollisionSource },
+            //{ name: 'introBBase', source: introBBaseSource },
+            //{ name: 'introBCollision', source: introBCollisionSource },
 
-            { name: 'introRBase', source: introRBaseSource },
-            { name: 'introRCollision', source: introRCollisionSource },
+            //{ name: 'introRBase', source: introRBaseSource },
+            //{ name: 'introRCollision', source: introRCollisionSource },
 
-            { name: 'introUBase', source: introUBaseSource },
-            { name: 'introUCollision', source: introUCollisionSource },
+            //{ name: 'introUBase', source: introUBaseSource },
+            //{ name: 'introUCollision', source: introUCollisionSource },
 
-            { name: 'introNBase', source: introNBaseSource },
-            { name: 'introNCollision', source: introNCollisionSource },
+            //{ name: 'introNBase', source: introNBaseSource },
+            //{ name: 'introNCollision', source: introNCollisionSource },
 
-            { name: 'introOBase', source: introOBaseSource },
-            { name: 'introOCollision', source: introOCollisionSource },
+            //{ name: 'introOBase', source: introOBaseSource },
+            //{ name: 'introOCollision', source: introOCollisionSource },
 
-            { name: 'introSBase', source: introSBaseSource },
-            { name: 'introSCollision', source: introSCollisionSource },
+            //{ name: 'introSBase', source: introSBaseSource },
+            //{ name: 'introSCollision', source: introSCollisionSource },
 
-            { name: 'introIBase', source: introIBaseSource },
-            { name: 'introICollision', source: introICollisionSource },
+            //{ name: 'introIBase', source: introIBaseSource },
+            //{ name: 'introICollision', source: introICollisionSource },
 
-            { name: 'introMBase', source: introMBaseSource },
-            { name: 'introMCollision', source: introMCollisionSource },
+            //{ name: 'introMBase', source: introMBaseSource },
+            //{ name: 'introMCollision', source: introMCollisionSource },
 
-            { name: 'introCreativeBase', source: introCreativeBaseSource },
-            { name: 'introCreativeCollision', source: introCreativeCollisionSource },
+            //{ name: 'introCreativeBase', source: introCreativeBaseSource },
+            //{ name: 'introCreativeCollision', source: introCreativeCollisionSource },
 
-            { name: 'introDevBase', source: introDevBaseSource },
-            { name: 'introDevCollision', source: introDevCollisionSource },
+            //{ name: 'introDevBase', source: introDevBaseSource },
+            //{ name: 'introDevCollision', source: introDevCollisionSource },
 
             // Intro
             { name: 'crossroadsStaticBase', source: crossroadsStaticBaseSource },

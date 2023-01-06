@@ -89,19 +89,19 @@ export default class InformationSection
         // Options
         this.links.options = [
             {
-                href: 'https://twitter.com/bruno_simon/',
+                href: 'https://twitter.com/90VuHwwuzNhhW3h/',
                 labelTexture: this.resources.items.informationContactTwitterLabelTexture
             },
             {
-                href: 'https://github.com/brunosimon/',
+                href: 'https://github.com/princepride/',
                 labelTexture: this.resources.items.informationContactGithubLabelTexture
             },
             {
-                href: 'https://www.linkedin.com/in/simonbruno77/',
+                href: 'https://www.linkedin.com/in/zhipeng-wang-3a8935251/',
                 labelTexture: this.resources.items.informationContactLinkedinLabelTexture
             },
             {
-                href: 'mailto:simon.bruno.77@gmail.com',
+                href: 'mailto:wangzhipeng628@gmail.com',
                 labelTexture: this.resources.items.informationContactMailLabelTexture
             }
         ]
@@ -150,8 +150,8 @@ export default class InformationSection
     {
         // Set up
         this.activities = {}
-        this.activities.x = this.x + 0
-        this.activities.y = this.y - 10
+        this.activities.x = this.x + 1
+        this.activities.y = this.y + 53
         this.activities.multiplier = 5.5
 
         // Geometry

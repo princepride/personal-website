@@ -24,7 +24,7 @@ export default class IntroSection
         this.setStatic()
         this.setInstructions()
         this.setOtherInstructions()
-        this.setTitles()
+        //this.setTitles()
         this.setTiles()
         this.setDikes()
     }
@@ -63,14 +63,16 @@ export default class IntroSection
         this.instructions.arrows.label.mesh = new THREE.Mesh(this.instructions.arrows.label.geometry, this.instructions.arrows.label.material)
         this.container.add(this.instructions.arrows.label.mesh)
         console.log(this.instructions.arrows.label)
-        this.instructions.arrows.label.mesh.position.y = -80
+        this.instructions.arrows.label.mesh.position.y = -48
+        this.instructions.arrows.label.mesh.position.x = -10
         if(!this.config.touch)
         {
             // Keys
             this.instructions.arrows.up = this.objects.add({
                 base: this.resources.items.introArrowKeyBase.scene,
                 collision: this.resources.items.introArrowKeyCollision.scene,
-                offset: new THREE.Vector3(0, 0, 0),
+                //offset: new THREE.Vector3(0, 0, 0),
+                offset: new THREE.Vector3(-10, -48, 0),
                 rotation: new THREE.Euler(0, 0, 0),
                 duplicated: true,
                 shadow: { sizeX: 1, sizeY: 1, offsetZ: - 0.2, alpha: 0.5 },
@@ -80,7 +82,8 @@ export default class IntroSection
             this.instructions.arrows.down = this.objects.add({
                 base: this.resources.items.introArrowKeyBase.scene,
                 collision: this.resources.items.introArrowKeyCollision.scene,
-                offset: new THREE.Vector3(0, - 0.8, 0),
+                //offset: new THREE.Vector3(0, - 0.8, 0),
+                offset: new THREE.Vector3(-10, - 48.8, 0),
                 rotation: new THREE.Euler(0, 0, Math.PI),
                 duplicated: true,
                 shadow: { sizeX: 1, sizeY: 1, offsetZ: - 0.2, alpha: 0.5 },
@@ -90,7 +93,8 @@ export default class IntroSection
             this.instructions.arrows.left = this.objects.add({
                 base: this.resources.items.introArrowKeyBase.scene,
                 collision: this.resources.items.introArrowKeyCollision.scene,
-                offset: new THREE.Vector3(- 0.8, - 0.8, 0),
+                //offset: new THREE.Vector3(- 0.8, - 0.8, 0),
+                offset: new THREE.Vector3(- 10.8, - 48.8, 0),
                 rotation: new THREE.Euler(0, 0, Math.PI * 0.5),
                 duplicated: true,
                 shadow: { sizeX: 1, sizeY: 1, offsetZ: - 0.2, alpha: 0.5 },
@@ -100,7 +104,8 @@ export default class IntroSection
             this.instructions.arrows.right = this.objects.add({
                 base: this.resources.items.introArrowKeyBase.scene,
                 collision: this.resources.items.introArrowKeyCollision.scene,
-                offset: new THREE.Vector3(0.8, - 0.8, 0),
+                //offset: new THREE.Vector3(0.8, - 0.8, 0),
+                offset: new THREE.Vector3(-9.2, - 48.8, 0),
                 rotation: new THREE.Euler(0, 0, - Math.PI * 0.5),
                 duplicated: true,
                 shadow: { sizeX: 1, sizeY: 1, offsetZ: - 0.2, alpha: 0.5 },
@@ -120,8 +125,8 @@ export default class IntroSection
         this.otherInstructions = {}
         //this.otherInstructions.x = 16
         //this.otherInstructions.y = - 2
-        this.otherInstructions.x = 8
-        this.otherInstructions.y = - 72
+        this.otherInstructions.x = 0
+        this.otherInstructions.y = -65
 
         // Container
         this.otherInstructions.container = new THREE.Object3D()
@@ -160,123 +165,123 @@ export default class IntroSection
         })
     }
 
-    setTitles()
-    {
-        // Title
-        this.objects.add({
-            base: this.resources.items.introBBase.scene,
-            collision: this.resources.items.introBCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introRBase.scene,
-            collision: this.resources.items.introRCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introUBase.scene,
-            collision: this.resources.items.introUCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introNBase.scene,
-            collision: this.resources.items.introNCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            duplicated: true,
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introOBase.scene,
-            collision: this.resources.items.introOCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            duplicated: true,
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introSBase.scene,
-            collision: this.resources.items.introSCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introIBase.scene,
-            collision: this.resources.items.introICollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introMBase.scene,
-            collision: this.resources.items.introMCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introOBase.scene,
-            collision: this.resources.items.introOCollision.scene,
-            offset: new THREE.Vector3(3.95, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            duplicated: true,
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introNBase.scene,
-            collision: this.resources.items.introNCollision.scene,
-            offset: new THREE.Vector3(5.85, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            duplicated: true,
-            shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introCreativeBase.scene,
-            collision: this.resources.items.introCreativeCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0.25),
-            shadow: { sizeX: 5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.3 },
-            mass: 1.5,
-            sleep: false,
-            soundName: 'brick'
-        })
-        this.objects.add({
-            base: this.resources.items.introDevBase.scene,
-            collision: this.resources.items.introDevCollision.scene,
-            offset: new THREE.Vector3(0, 0, 0),
-            rotation: new THREE.Euler(0, 0, 0),
-            shadow: { sizeX: 2.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.3 },
-            mass: 1.5,
-            soundName: 'brick'
-        })
-    }
+    //setTitles()
+    //{
+    //    // Title
+    //    this.objects.add({
+    //        base: this.resources.items.introBBase.scene,
+    //        collision: this.resources.items.introBCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introRBase.scene,
+    //        collision: this.resources.items.introRCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introUBase.scene,
+    //        collision: this.resources.items.introUCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introNBase.scene,
+    //        collision: this.resources.items.introNCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        duplicated: true,
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introOBase.scene,
+    //        collision: this.resources.items.introOCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        duplicated: true,
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introSBase.scene,
+    //        collision: this.resources.items.introSCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introIBase.scene,
+    //        collision: this.resources.items.introICollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introMBase.scene,
+    //        collision: this.resources.items.introMCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introOBase.scene,
+    //        collision: this.resources.items.introOCollision.scene,
+    //        offset: new THREE.Vector3(3.95, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        duplicated: true,
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introNBase.scene,
+    //        collision: this.resources.items.introNCollision.scene,
+    //        offset: new THREE.Vector3(5.85, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        duplicated: true,
+    //        shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introCreativeBase.scene,
+    //        collision: this.resources.items.introCreativeCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0.25),
+    //        shadow: { sizeX: 5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.3 },
+    //        mass: 1.5,
+    //        sleep: false,
+    //        soundName: 'brick'
+    //    })
+    //    this.objects.add({
+    //        base: this.resources.items.introDevBase.scene,
+    //        collision: this.resources.items.introDevCollision.scene,
+    //        offset: new THREE.Vector3(0, 0, 0),
+    //        rotation: new THREE.Euler(0, 0, 0),
+    //        shadow: { sizeX: 2.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.3 },
+    //        mass: 1.5,
+    //        soundName: 'brick'
+    //    })
+    //}
 
     setTiles()
     {
