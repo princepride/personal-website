@@ -35,6 +35,7 @@ export default class IntroSection
             base: this.resources.items.introStaticBase.scene,
             collision: this.resources.items.introStaticCollision.scene,
             floorShadowTexture: this.resources.items.introStaticFloorShadowTexture,
+            //offset: new THREE.Vector3(0, 0, 0),
             offset: new THREE.Vector3(0, 0, 0),
             mass: 0
         })
@@ -59,10 +60,10 @@ export default class IntroSection
         this.instructions.arrows.label.material = new THREE.MeshBasicMaterial({ transparent: true, alphaMap: this.instructions.arrows.label.texture, color: 0xffffff, depthWrite: false, opacity: 0 })
 
         this.instructions.arrows.label.geometry = this.resources.items.introInstructionsLabels.scene.children.find((_mesh) => _mesh.name === 'arrows').geometry
-
         this.instructions.arrows.label.mesh = new THREE.Mesh(this.instructions.arrows.label.geometry, this.instructions.arrows.label.material)
         this.container.add(this.instructions.arrows.label.mesh)
-
+        console.log(this.instructions.arrows.label)
+        this.instructions.arrows.label.mesh.position.y = -80
         if(!this.config.touch)
         {
             // Keys
@@ -117,8 +118,10 @@ export default class IntroSection
         }
 
         this.otherInstructions = {}
-        this.otherInstructions.x = 16
-        this.otherInstructions.y = - 2
+        //this.otherInstructions.x = 16
+        //this.otherInstructions.y = - 2
+        this.otherInstructions.x = 8
+        this.otherInstructions.y = - 72
 
         // Container
         this.otherInstructions.container = new THREE.Object3D()
