@@ -13,3 +13,5 @@ Controls中有车辆控制
 IntroSection中可以改说明介绍
 
 Shadows中this.color = '#d04500'为阴影颜色
+
+Materials中颜色
