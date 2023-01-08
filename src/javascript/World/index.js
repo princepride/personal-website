@@ -72,6 +72,8 @@ export default class
         this.setObjects()
         this.setCar()
         this.areas.car = this.car
+        console.log(this.car)
+        console.log(this.camera)
         this.setTiles()
         this.setWalls()
         this.setSections()

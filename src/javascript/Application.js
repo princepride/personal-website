@@ -123,6 +123,17 @@ export default class Application
             {
                 this.camera.target.x = this.world.car.chassis.object.position.x
                 this.camera.target.y = this.world.car.chassis.object.position.y
+                //console.log(this.camera.position)
+                //console.log('x :'+this.camera.pan.value.x+' y :'+this.camera.pan.value.y+' z :'+this.camera.pan.value.z)
+                //let xDiff = this.world.car.chassis.object.position.x - this.world.car.chassis.oldPosition.x
+                //let yDiff = this.world.car.chassis.object.position.y - this.world.car.chassis.oldPosition.y
+                //let t = Math.atan2(yDiff, xDiff);
+                //console.log(t)
+                //if (t > Math.PI){
+                //    t -= Math.PI;
+                //}
+               //this.camera.angle.value.y = t
+                //this.camera.angle.value.y = this.world.car.wheels.object.rotation._y
             }
         })
     }

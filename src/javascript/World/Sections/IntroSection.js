@@ -62,7 +62,6 @@ export default class IntroSection
         this.instructions.arrows.label.geometry = this.resources.items.introInstructionsLabels.scene.children.find((_mesh) => _mesh.name === 'arrows').geometry
         this.instructions.arrows.label.mesh = new THREE.Mesh(this.instructions.arrows.label.geometry, this.instructions.arrows.label.material)
         this.container.add(this.instructions.arrows.label.mesh)
-        console.log(this.instructions.arrows.label)
         this.instructions.arrows.label.mesh.position.y = -48
         this.instructions.arrows.label.mesh.position.x = -10
         if(!this.config.touch)
