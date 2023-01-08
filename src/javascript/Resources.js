@@ -96,17 +96,6 @@ import projectsDistinctionsFWACollisionSource from '../models/projects/distincti
 import projectsDistinctionsCSSDABaseSource from '../models/projects/distinctions/cssda/base.glb'
 import projectsDistinctionsCSSDACollisionSource from '../models/projects/distinctions/cssda/collision.glb'
 
-import projectsThreejsJourneyFloorSource from '../models/projects/threejsJourney/floorTexture.png'
-import projectsMadboxFloorSource from '../models/projects/madbox/floorTexture.png'
-import projectsScoutFloorSource from '../models/projects/scout/floorTexture.png'
-import projectsChartogneFloorSource from '../models/projects/chartogne/floorTexture.png'
-import projectsZenlyFloorSource from '../models/projects/zenly/floorTexture.png'
-import projectsCitrixRedbullFloorSource from '../models/projects/citrixRedbull/floorTexture.png'
-import projectsPriorHoldingsFloorSource from '../models/projects/priorHoldings/floorTexture.png'
-import projectsOranoFloorSource from '../models/projects/orano/floorTexture.png'
-// import projectsGleecChatFloorSource from '../models/projects/gleecChat/floorTexture.png'
-import projectsKepplerFloorSource from '../models/projects/keppler/floorTexture.png'
-
 //My own floor texture
 import projectsSmartPortfolioAdvisorSource from '../models/projects/SmartPortfolioAdvisor/floorTexture.png'
 import projectsPathfindingVisualizerSource from '../models/projects/PathfindingVisualizer/floorTexture.png'
@@ -257,36 +246,6 @@ export default class Resources extends EventEmitter
             { name: 'introArrowKeyBase', source: introArrowKeyBaseSource },
             { name: 'introArrowKeyCollision', source: introArrowKeyCollisionSource },
 
-            //{ name: 'introBBase', source: introBBaseSource },
-            //{ name: 'introBCollision', source: introBCollisionSource },
-
-            //{ name: 'introRBase', source: introRBaseSource },
-            //{ name: 'introRCollision', source: introRCollisionSource },
-
-            //{ name: 'introUBase', source: introUBaseSource },
-            //{ name: 'introUCollision', source: introUCollisionSource },
-
-            //{ name: 'introNBase', source: introNBaseSource },
-            //{ name: 'introNCollision', source: introNCollisionSource },
-
-            //{ name: 'introOBase', source: introOBaseSource },
-            //{ name: 'introOCollision', source: introOCollisionSource },
-
-            //{ name: 'introSBase', source: introSBaseSource },
-            //{ name: 'introSCollision', source: introSCollisionSource },
-
-            //{ name: 'introIBase', source: introIBaseSource },
-            //{ name: 'introICollision', source: introICollisionSource },
-
-            //{ name: 'introMBase', source: introMBaseSource },
-            //{ name: 'introMCollision', source: introMCollisionSource },
-
-            //{ name: 'introCreativeBase', source: introCreativeBaseSource },
-            //{ name: 'introCreativeCollision', source: introCreativeCollisionSource },
-
-            //{ name: 'introDevBase', source: introDevBaseSource },
-            //{ name: 'introDevCollision', source: introDevCollisionSource },
-
             // Intro
             { name: 'crossroadsStaticBase', source: crossroadsStaticBaseSource },
             { name: 'crossroadsStaticCollision', source: crossroadsStaticCollisionSource },
@@ -320,17 +279,6 @@ export default class Resources extends EventEmitter
             { name: 'projectsDistinctionsFWACollision', source: projectsDistinctionsFWACollisionSource },
             { name: 'projectsDistinctionsCSSDABase', source: projectsDistinctionsCSSDABaseSource },
             { name: 'projectsDistinctionsCSSDACollision', source: projectsDistinctionsCSSDACollisionSource },
-
-            { name: 'projectsThreejsJourneyFloor', source: projectsThreejsJourneyFloorSource, type: 'texture' },
-            { name: 'projectsMadboxFloor', source: projectsMadboxFloorSource, type: 'texture' },
-            { name: 'projectsScoutFloor', source: projectsScoutFloorSource, type: 'texture' },
-            { name: 'projectsChartogneFloor', source: projectsChartogneFloorSource, type: 'texture' },
-            { name: 'projectsZenlyFloor', source: projectsZenlyFloorSource, type: 'texture' },
-            { name: 'projectsCitrixRedbullFloor', source: projectsCitrixRedbullFloorSource, type: 'texture' },
-            { name: 'projectsPriorHoldingsFloor', source: projectsPriorHoldingsFloorSource, type: 'texture' },
-            { name: 'projectsOranoFloor', source: projectsOranoFloorSource, type: 'texture' },
-            // { name: 'projectsGleecChatFloor', source: projectsGleecChatFloorSource, type: 'texture' },
-            { name: 'projectsKepplerFloor', source: projectsKepplerFloorSource, type: 'texture' },
 
             // Information
             { name: 'informationStaticBase', source: informationStaticBaseSource },
