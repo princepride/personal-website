@@ -11,6 +11,16 @@ import projectsPathfindingVisualizerASources from '../../../models/projects/Path
 import projectsPathfindingVisualizerBSources from '../../../models/projects/PathfindingVisualizer/SlideB.png'
 import projectsPathfindingVisualizerCSources from '../../../models/projects/PathfindingVisualizer/SlideC.png'
 
+import projectsFiveInARowASources from '../../../models/projects/FiveInARow/slideA.jpg'
+import projectsFiveInARowBSources from '../../../models/projects/FiveInARow/slideB.jpg'
+
+import projectsNewUberASources from '../../../models/projects/NewUber/slideA.jpg'
+import projectsNewUberBSources from '../../../models/projects/NewUber/slideB.jpg'
+import projectsNewUberCSources from '../../../models/projects/NewUber/slideC.jpg'
+import projectsNewUberDSources from '../../../models/projects/NewUber/slideD.jpg'
+
+import projectScannerASources from '../../../models/projects/Scanner/slideA.jpg'
+import projectScannerBSources from '../../../models/projects/Scanner/slideB.jpg'
 
 export default class ProjectsSection
 {
@@ -80,6 +90,32 @@ export default class ProjectsSection
     setList()
     {
         this.list = [
+            //{ name: 'projectsNewUberFloor', source: projectsNewUberSource, type: 'texture' },
+            //{ name: 'projectsFiveInARowFloor', source: projectsFiveInARowSource, type: 'texture' },
+            //{ name: 'projectsScannerFloor', source: projectsScannerSource, type: 'texture'},
+            {
+                name: 'Five In A Row',
+                imageSources:
+                [
+                    projectsFiveInARowASources,
+                    projectsFiveInARowBSources
+                ],
+                floorTexture: this.resources.items.projectsFiveInARowFloorTexture,
+                link:
+                {
+                    href: 'https://github.com/princepride/GoBang',
+                    x: - 4.8,
+                    y: - 6,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions:
+                [
+                ]
+            },
             {
                 name: 'Smart Portfolio Advisor',
                 imageSources:
@@ -117,6 +153,54 @@ export default class ProjectsSection
                 link:
                 {
                     href: 'https://github.com/princepride/dashboard',
+                    x: - 4.8,
+                    y: - 4,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions:
+                [
+                ]
+            },
+            {
+                name: 'Cyber Share',
+                imageSources:
+                [
+                    projectsNewUberASources,
+                    projectsNewUberBSources,
+                    projectsNewUberCSources,
+                    projectsNewUberDSources,
+                ],
+                floorTexture: this.resources.items.projectsNewUberFloorTexture,
+                link:
+                {
+                    href: 'https://github.com/princepride/newUber',
+                    x: - 4.8,
+                    y: - 5.5,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions:
+                [
+                ]
+            },
+            {
+                name: 'Smart Scanner',
+                imageSources:
+                [
+                    projectScannerASources,
+                    projectScannerBSources
+                ],
+                floorTexture: this.resources.items.projectsScannerFloorTexture,
+                link:
+                {
+                    href: 'https://github.com/princepride/scanner',
                     x: - 4.8,
                     y: - 4,
                     halfExtents:

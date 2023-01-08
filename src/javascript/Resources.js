@@ -32,36 +32,6 @@ import introInstructionsOtherSource from '../models/intro/instructions/other.png
 import introArrowKeyBaseSource from '../models/intro/arrowKey/base.glb'
 import introArrowKeyCollisionSource from '../models/intro/arrowKey/collision.glb'
 
-//import introBBaseSource from '../models/intro/b/base.glb'
-//import introBCollisionSource from '../models/intro/b/collision.glb'
-
-//import introRBaseSource from '../models/intro/r/base.glb'
-//import introRCollisionSource from '../models/intro/r/collision.glb'
-
-//import introUBaseSource from '../models/intro/u/base.glb'
-//import introUCollisionSource from '../models/intro/u/collision.glb'
-
-//import introNBaseSource from '../models/intro/n/base.glb'
-//import introNCollisionSource from '../models/intro/n/collision.glb'
-
-//import introOBaseSource from '../models/intro/o/base.glb'
-//import introOCollisionSource from '../models/intro/o/collision.glb'
-
-//import introSBaseSource from '../models/intro/s/base.glb'
-//import introSCollisionSource from '../models/intro/s/collision.glb'
-
-//import introIBaseSource from '../models/intro/i/base.glb'
-//import introICollisionSource from '../models/intro/i/collision.glb'
-
-//import introMBaseSource from '../models/intro/m/base.glb'
-//import introMCollisionSource from '../models/intro/m/collision.glb'
-
-//import introCreativeBaseSource from '../models/intro/creative/base.glb'
-//import introCreativeCollisionSource from '../models/intro/creative/collision.glb'
-
-//import introDevBaseSource from '../models/intro/dev/base.glb'
-//import introDevCollisionSource from '../models/intro/dev/collision.glb'
-
 // Crossroads
 import crossroadsStaticFloorShadowSource from '../models/crossroads/static/floorShadow.png'
 import crossroadsStaticBaseSource from '../models/crossroads/static/base.glb'
@@ -99,6 +69,9 @@ import projectsDistinctionsCSSDACollisionSource from '../models/projects/distinc
 //My own floor texture
 import projectsSmartPortfolioAdvisorSource from '../models/projects/SmartPortfolioAdvisor/floorTexture.png'
 import projectsPathfindingVisualizerSource from '../models/projects/PathfindingVisualizer/floorTexture.png'
+import projectsScannerSource from '../models/projects/Scanner/floorTexture.png'
+import projectsNewUberSource from '../models/projects/NewUber/floorTexture.png'
+import projectsFiveInARowSource from '../models/projects/FiveInARow/floorTexture.png'
 // Information
 import informationStaticBaseSource from '../models/information/static/base.glb'
 import informationStaticCollisionSource from '../models/information/static/collision.glb'
@@ -216,7 +189,9 @@ export default class Resources extends EventEmitter
             //My own project
             { name: 'projectsSmartPortfolioAdvisorFloor', source: projectsSmartPortfolioAdvisorSource, type: 'texture' },
             { name: 'projectsPathfindingVisualizerFloor', source: projectsPathfindingVisualizerSource, type: 'texture' },
-
+            { name: 'projectsNewUberFloor', source: projectsNewUberSource, type: 'texture' },
+            { name: 'projectsFiveInARowFloor', source: projectsFiveInARowSource, type: 'texture' },
+            { name: 'projectsScannerFloor', source: projectsScannerSource, type: 'texture'},
             // Matcaps
             { name: 'matcapBeige', source: matcapBeigeSource, type: 'texture' },
             { name: 'matcapBlack', source: matcapBlackSource, type: 'texture' },
