@@ -59,13 +59,6 @@ import projectsBoardCollisionSource from '../models/projects/board/collision.glb
 import projectsBoardStructureFloorShadowSource from '../models/projects/board/floorShadow.png'
 import projectsBoardPlaneSource from '../models/projects/board/plane.glb'
 
-import projectsDistinctionsAwwwardsBaseSource from '../models/projects/distinctions/awwwards/base.glb'
-import projectsDistinctionsAwwwardsCollisionSource from '../models/projects/distinctions/awwwards/collision.glb'
-import projectsDistinctionsFWABaseSource from '../models/projects/distinctions/fwa/base.glb'
-import projectsDistinctionsFWACollisionSource from '../models/projects/distinctions/fwa/collision.glb'
-import projectsDistinctionsCSSDABaseSource from '../models/projects/distinctions/cssda/base.glb'
-import projectsDistinctionsCSSDACollisionSource from '../models/projects/distinctions/cssda/collision.glb'
-
 //My own floor texture
 import projectsSmartPortfolioAdvisorSource from '../models/projects/SmartPortfolioAdvisor/floorTexture.png'
 import projectsPathfindingVisualizerSource from '../models/projects/PathfindingVisualizer/floorTexture.png'
@@ -247,13 +240,6 @@ export default class Resources extends EventEmitter
             { name: 'projectsBoardCollision', source: projectsBoardCollisionSource },
             { name: 'projectsBoardStructureFloorShadow', source: projectsBoardStructureFloorShadowSource, type: 'texture' },
             { name: 'projectsBoardPlane', source: projectsBoardPlaneSource },
-
-            { name: 'projectsDistinctionsAwwwardsBase', source: projectsDistinctionsAwwwardsBaseSource },
-            { name: 'projectsDistinctionsAwwwardsCollision', source: projectsDistinctionsAwwwardsCollisionSource },
-            { name: 'projectsDistinctionsFWABase', source: projectsDistinctionsFWABaseSource },
-            { name: 'projectsDistinctionsFWACollision', source: projectsDistinctionsFWACollisionSource },
-            { name: 'projectsDistinctionsCSSDABase', source: projectsDistinctionsCSSDABaseSource },
-            { name: 'projectsDistinctionsCSSDACollision', source: projectsDistinctionsCSSDACollisionSource },
 
             // Information
             { name: 'informationStaticBase', source: informationStaticBaseSource },

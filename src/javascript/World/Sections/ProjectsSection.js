@@ -112,9 +112,6 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                ]
             },
             {
                 name: 'Smart Portfolio Advisor',
@@ -136,9 +133,6 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                ]
             },
             {
                 name: 'Path Finding Visualizer',
@@ -161,9 +155,6 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                ]
             },
             {
                 name: 'Cyber Share',
@@ -186,9 +177,6 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                ]
             },
             {
                 name: 'Smart Scanner',
@@ -209,9 +197,6 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                ]
             },
         ]
     }

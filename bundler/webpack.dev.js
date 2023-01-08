@@ -8,6 +8,7 @@ module.exports = webpackMerge(
         devServer:
         {
             contentBase: './dist',
+            disableHostCheck: true,
             open: true
         }
     }
