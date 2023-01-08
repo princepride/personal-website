@@ -68,8 +68,6 @@ export default class DistinctionASection
         this.walls.add({
             object:
             {
-                base: this.resources.items.projectsDistinctionsAwwwardsBase.scene,
-                collision: this.resources.items.projectsDistinctionsAwwwardsCollision.scene,
                 offset: new THREE.Vector3(0, 0, 0.1),
                 rotation: new THREE.Euler(0, 0, 0),
                 duplicated: true,

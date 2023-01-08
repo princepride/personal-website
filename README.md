@@ -1,17 +1,15 @@
-# personal-website
+# Wang Zhipeng's Personal Website
 
-projectsKepplerSlideASources 这个项目里有项目的链接和图片
+[clink here to visit my personal website](https://princepride.github.io/personal-website/)
 
-models/information 中有法国元素
+## Introduction
 
-Applications 中有镜头跟随
+This website combines three.js to build the 3D website, blender to build the 3D models and GLSL to shader the 3D models. It supports mobile and PC .
 
-index中有车辆属性
+***If you want to know my personal resume, then drive the car and go straight!***
 
-Controls中有车辆控制
+***If you want to know what projects I've worked on, make a left turn at the intersection！***
 
-IntroSection中可以改说明介绍
+***If you want to follow me through my social accounts, then please explore in situ!***
 
-Shadows中this.color = '#d04500'为阴影颜色
-
-Materials中颜色
+***If you just want to have fun, turning left is also a good choice！***
