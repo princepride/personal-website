@@ -43,7 +43,7 @@ export default class Areas
         })
 
         // Mouse click event
-        window.addEventListener('mousedown', () =>
+        window.addEventListener('mouseup', () =>
         {
             if(this.mouse.currentArea)
             {

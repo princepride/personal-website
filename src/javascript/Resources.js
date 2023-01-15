@@ -77,6 +77,7 @@ import informationContactTwitterLabelSource from '../models/information/static/c
 import informationContactGithubLabelSource from '../models/information/static/contactGithubLabel.png'
 import informationContactLinkedinLabelSource from '../models/information/static/contactLinkedinLabel.png'
 import informationContactMailLabelSource from '../models/information/static/contactMailLabel.png'
+import informationContactDiaryLabelSource from '../models/information/static/contactDiaryLabel.png'
 
 import informationActivitiesSource from '../models/information/static/activities.png'
 
@@ -253,7 +254,7 @@ export default class Resources extends EventEmitter
             { name: 'informationContactGithubLabel', source: informationContactGithubLabelSource, type: 'texture' },
             { name: 'informationContactLinkedinLabel', source: informationContactLinkedinLabelSource, type: 'texture' },
             { name: 'informationContactMailLabel', source: informationContactMailLabelSource, type: 'texture' },
-
+            { name: 'informationContactDiaryLabel', source: informationContactDiaryLabelSource, type: 'texture' },
             { name: 'informationActivities', source: informationActivitiesSource, type: 'texture' },
 
             // Playground
