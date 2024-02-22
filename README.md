@@ -13,3 +13,18 @@ This website combines three.js to build the 3D website, blender to build the 3D 
 ***If you want to follow me through my social accounts, then please explore in situ!***
 
 ***If you just want to have fun, turning left is also a good choice！***
+
+## Install
+
+node version: 16
+
+```
+# Install dependencies (only for first time)
+npm i
+
+# Serve at localhost:8080
+npm run dev
+
+# Build for production in the dist/ directory
+npm run build
+```
