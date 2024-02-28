@@ -2,6 +2,9 @@
 
 [clink here to visit my personal website](https://princepride.github.io/personal-website/)
 
+![image](https://github.com/princepride/personal-website/assets/29850264/a155098f-f5d6-4fbf-a2ca-f17ba2b50920)
+
+
 ## Introduction
 
 This website combines three.js to build the 3D website, blender to build the 3D models and GLSL to shader the 3D models. It supports mobile and PC .
